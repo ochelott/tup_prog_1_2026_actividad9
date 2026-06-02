@@ -27,7 +27,12 @@ namespace Clase_Program
         }
         static public double ObtenerPromedio()
         {
-            return (double)Acumulado / Cantidad;
+            double Promedio;
+            if (Cantidad > 0)
+            {
+                Promedio = 1.0 * Acumulado / Cantidad;
+            }
+            return Promedio;
         }
         static public int PantallaMostrarMenu()
         {
